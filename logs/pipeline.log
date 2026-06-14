@@ -1,0 +1,305 @@
+✅[INFO] Config:
+  trip: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+  mapping: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+✅[OK] Data berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+✅[OK] Data Mapping Location berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+✅[OK] Nama kolom telah diubah menjadi huruf kecil.
+✅[OK] Kolom datetime telah ditambahkan: pickup_date, pickup_hour, day_of_week, is_weekend, trip_duration
+✅[OK] Kolom time_period telah ditambahkan
+✅[OK] Kolom payment_type telah dimapping ke deskripsi pembayaran.
+✅[OK] Kolom store_and_fwd_flag telah dimapping ke deskripsi store_and_fwd_flag.
+✅[OK] Nilai pada kolom pulocationid dan dolocationid telah dimapping menjadi borough
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/transformed/yellow_tripdata_2026-01_transformed.csv ===
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01.csv ===
+/Library/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/cleaning_data.py': [Errno 2] No such file or directory
+✅[INFO] Config:
+  trip: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+  mapping: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+✅[OK] Data berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+✅[OK] Data Mapping Location berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+✅[OK] Nama kolom telah diubah menjadi huruf kecil.
+✅[OK] Kolom datetime telah ditambahkan: pickup_date, pickup_hour, day_of_week, is_weekend, trip_duration
+✅[OK] Kolom time_period telah ditambahkan
+✅[OK] Kolom payment_type telah dimapping ke deskripsi pembayaran.
+✅[OK] Kolom store_and_fwd_flag telah dimapping ke deskripsi store_and_fwd_flag.
+✅[OK] Nilai pada kolom pulocationid dan dolocationid telah dimapping menjadi borough
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/transformed/yellow_tripdata_2026-01_transformed.csv ===
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01.csv ===
+Data berhasil dimuat.
+Cek tipe data :
+vendorid                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+ratecodeid               float64
+store_and_fwd_flag           str
+pulocationid                 str
+dolocationid                 str
+payment_type                 str
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+airport_fee              float64
+cbd_congestion_fee       float64
+pickup_date                  str
+pickup_hour                int64
+day_of_week                  str
+is_weekend                  bool
+trip_duration            float64
+time_period                  str
+dtype: object
+✅[OK] Kolom datetime telah diubah menjadi tipe datetime.
+⚠️[WARNING] Ditemukan nilai null pada kolom passenger_count. Mengganti dengan mean: 1.26.
+✅[OK] Nilai null pada kolom passenger_count telah diganti dengan mean: 1.26.
+⚠️[WARNING] Ditemukan nilai null pada kolom ratecodeid. Mengganti dengan mean: 5.22.
+✅[OK] Nilai null pada kolom ratecodeid telah diganti dengan mean: 5.22.
+⚠️[WARNING] Ditemukan nilai null pada kolom congestion_surcharge. Mengganti dengan mean: 2.15.
+✅[OK] Nilai null pada kolom congestion_surcharge telah diganti dengan mean: 2.15.
+⚠️[WARNING] Ditemukan nilai null pada kolom airport_fee. Mengganti dengan mean: 0.15.
+✅[OK] Nilai null pada kolom airport_fee telah diganti dengan mean: 0.15.
+⚠️[WARNING] Ditemukan 1 baris dengan trip_duration negatif.
+         trip_duration
+1465434         -702.0
+✅[OK] Tidak ditemukan nilai trip_distance negatif.
+✅[OK] Data yang sudah dibersihkan berhasil disimpan ke: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01_cleaned.csv
+✅[INFO] Config:
+  trip: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+  mapping: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+✅[OK] Data berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+✅[OK] Data Mapping Location berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+✅[OK] Nama kolom telah diubah menjadi huruf kecil.
+✅[OK] Kolom datetime telah ditambahkan: pickup_date, pickup_hour, day_of_week, is_weekend, trip_duration
+✅[OK] Kolom time_period telah ditambahkan
+✅[OK] Kolom payment_type telah dimapping ke deskripsi pembayaran.
+✅[OK] Kolom store_and_fwd_flag telah dimapping ke deskripsi store_and_fwd_flag.
+✅[OK] Nilai pada kolom pulocationid dan dolocationid telah dimapping menjadi borough
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/transformed/yellow_tripdata_2026-01_transformed.csv ===
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01.csv ===
+Data berhasil dimuat.
+Cek tipe data :
+vendorid                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+ratecodeid               float64
+store_and_fwd_flag           str
+pulocationid                 str
+dolocationid                 str
+payment_type                 str
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+airport_fee              float64
+cbd_congestion_fee       float64
+pickup_date                  str
+pickup_hour                int64
+day_of_week                  str
+is_weekend                  bool
+trip_duration            float64
+time_period                  str
+dtype: object
+✅[OK] Kolom datetime telah diubah menjadi tipe datetime.
+⚠️[WARNING] Ditemukan nilai null pada kolom passenger_count. Mengganti dengan mean: 1.26.
+✅[OK] Nilai null pada kolom passenger_count telah diganti dengan mean: 1.26.
+⚠️[WARNING] Ditemukan nilai null pada kolom ratecodeid. Mengganti dengan mean: 5.22.
+✅[OK] Nilai null pada kolom ratecodeid telah diganti dengan mean: 5.22.
+⚠️[WARNING] Ditemukan nilai null pada kolom congestion_surcharge. Mengganti dengan mean: 2.15.
+✅[OK] Nilai null pada kolom congestion_surcharge telah diganti dengan mean: 2.15.
+⚠️[WARNING] Ditemukan nilai null pada kolom airport_fee. Mengganti dengan mean: 0.15.
+✅[OK] Nilai null pada kolom airport_fee telah diganti dengan mean: 0.15.
+⚠️[WARNING] Ditemukan 1 baris dengan trip_duration negatif.
+         trip_duration
+1465434         -702.0
+✅[OK] Tidak ditemukan nilai trip_distance negatif.
+✅[OK] Data yang sudah dibersihkan berhasil disimpan ke: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01_cleaned.csv
+✅[INFO] Config:
+  trip: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+  mapping: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+✅[OK] Data berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+✅[OK] Data Mapping Location berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+✅[OK] Nama kolom telah diubah menjadi huruf kecil.
+✅[OK] Kolom datetime telah ditambahkan: pickup_date, pickup_hour, day_of_week, is_weekend, trip_duration
+✅[OK] Kolom time_period telah ditambahkan
+✅[OK] Kolom payment_type telah dimapping ke deskripsi pembayaran.
+✅[OK] Kolom store_and_fwd_flag telah dimapping ke deskripsi store_and_fwd_flag.
+✅[OK] Nilai pada kolom pulocationid dan dolocationid telah dimapping menjadi borough
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/transformed/yellow_tripdata_2026-01_transformed.csv ===
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01.csv ===
+Data berhasil dimuat.
+Cek tipe data :
+vendorid                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+ratecodeid               float64
+store_and_fwd_flag           str
+pulocationid                 str
+dolocationid                 str
+payment_type                 str
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+airport_fee              float64
+cbd_congestion_fee       float64
+pickup_date                  str
+pickup_hour                int64
+day_of_week                  str
+is_weekend                  bool
+trip_duration            float64
+time_period                  str
+dtype: object
+✅[OK] Kolom datetime telah diubah menjadi tipe datetime.
+⚠️[WARNING] Ditemukan nilai null pada kolom passenger_count. Mengganti dengan mean: 1.26.
+✅[OK] Nilai null pada kolom passenger_count telah diganti dengan mean: 1.26.
+⚠️[WARNING] Ditemukan nilai null pada kolom ratecodeid. Mengganti dengan mean: 5.22.
+✅[OK] Nilai null pada kolom ratecodeid telah diganti dengan mean: 5.22.
+⚠️[WARNING] Ditemukan nilai null pada kolom congestion_surcharge. Mengganti dengan mean: 2.15.
+✅[OK] Nilai null pada kolom congestion_surcharge telah diganti dengan mean: 2.15.
+⚠️[WARNING] Ditemukan nilai null pada kolom airport_fee. Mengganti dengan mean: 0.15.
+✅[OK] Nilai null pada kolom airport_fee telah diganti dengan mean: 0.15.
+⚠️[WARNING] Ditemukan 1 baris dengan trip_duration negatif.
+         trip_duration
+1465434         -702.0
+✅[OK] Tidak ditemukan nilai trip_distance negatif.
+✅[OK] Data yang sudah dibersihkan berhasil disimpan ke: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01_cleaned.csv
+✅[INFO] Config:
+  trip: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+  mapping: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+✅[OK] Data berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/yellow_tripdata_2026-01.parquet
+✅[OK] Data Mapping Location berhasil dimuat: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/taxi_zone_lookup_table.csv
+✅[OK] Nama kolom telah diubah menjadi huruf kecil.
+✅[OK] Kolom datetime telah ditambahkan: pickup_date, pickup_hour, day_of_week, is_weekend, trip_duration
+✅[OK] Kolom time_period telah ditambahkan
+✅[OK] Kolom payment_type telah dimapping ke deskripsi pembayaran.
+✅[OK] Kolom store_and_fwd_flag telah dimapping ke deskripsi store_and_fwd_flag.
+✅[OK] Nilai pada kolom pulocationid dan dolocationid telah dimapping menjadi borough
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/transformed/yellow_tripdata_2026-01_transformed.csv ===
+✅[OK] === File berhasil disimpan: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01.csv ===
+Data berhasil dimuat.
+Cek tipe data :
+vendorid                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+ratecodeid               float64
+store_and_fwd_flag           str
+pulocationid                 str
+dolocationid                 str
+payment_type                 str
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+airport_fee              float64
+cbd_congestion_fee       float64
+pickup_date                  str
+pickup_hour                int64
+day_of_week                  str
+is_weekend                  bool
+trip_duration            float64
+time_period                  str
+dtype: object
+✅[OK] Kolom datetime telah diubah menjadi tipe datetime.
+⚠️[WARNING] Ditemukan nilai null pada kolom passenger_count. Mengganti dengan mean: 1.26.
+✅[OK] Nilai null pada kolom passenger_count telah diganti dengan mean: 1.26.
+⚠️[WARNING] Ditemukan nilai null pada kolom ratecodeid. Mengganti dengan mean: 5.22.
+✅[OK] Nilai null pada kolom ratecodeid telah diganti dengan mean: 5.22.
+⚠️[WARNING] Ditemukan nilai null pada kolom congestion_surcharge. Mengganti dengan mean: 2.15.
+✅[OK] Nilai null pada kolom congestion_surcharge telah diganti dengan mean: 2.15.
+⚠️[WARNING] Ditemukan nilai null pada kolom airport_fee. Mengganti dengan mean: 0.15.
+✅[OK] Nilai null pada kolom airport_fee telah diganti dengan mean: 0.15.
+⚠️[WARNING] Ditemukan 1 baris dengan trip_duration negatif.
+         trip_duration
+1465434         -702.0
+✅[OK] Tidak ditemukan nilai trip_distance negatif.
+✅[OK] Data yang sudah dibersihkan berhasil disimpan ke: /Users/anninditas/Desktop/Purwadhika/JCDEAH-009/Capstone01/data/mart/yellow_tripdata_2026-01_cleaned.csv
+✅[INFO] Config:
+  trip: /app/data/yellow_tripdata_2026-01.parquet
+  mapping: /app/data/taxi_zone_lookup_table.csv
+  transformed: data/transformed
+  mart: data/mart
+❌[ERROR] Gagal memuat parquet: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - `Import pyarrow` failed. pyarrow is required for parquet support. Use pip or conda to install the pyarrow package.
+ - `Import fastparquet` failed. fastparquet is required for parquet support. Use pip or conda to install the fastparquet package.
+✅[OK] Data Mapping Location berhasil dimuat: /app/data/taxi_zone_lookup_table.csv
+❌[ERROR] Data belum dimuat. Panggil extract_data() dulu.
+❌[ERROR] Data belum dimuat. Panggil extract_data() dulu.
+❌[ERROR] Data belum dimuat. Panggil extract_data() dulu.
+Data berhasil dimuat.
+Cek tipe data :
+vendorid                   int64
+tpep_pickup_datetime         str
+tpep_dropoff_datetime        str
+passenger_count          float64
+trip_distance            float64
+ratecodeid               float64
+store_and_fwd_flag           str
+pulocationid                 str
+dolocationid                 str
+payment_type                 str
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+airport_fee              float64
+cbd_congestion_fee       float64
+pickup_date                  str
+pickup_hour                int64
+day_of_week                  str
+is_weekend                  bool
+trip_duration            float64
+time_period                  str
+dtype: object
+✅[OK] Kolom datetime telah diubah menjadi tipe datetime.
+⚠️[WARNING] Ditemukan nilai null pada kolom passenger_count. Mengganti dengan mean: 1.26.
+✅[OK] Nilai null pada kolom passenger_count telah diganti dengan mean: 1.26.
+⚠️[WARNING] Ditemukan nilai null pada kolom ratecodeid. Mengganti dengan mean: 5.22.
+✅[OK] Nilai null pada kolom ratecodeid telah diganti dengan mean: 5.22.
+⚠️[WARNING] Ditemukan nilai null pada kolom congestion_surcharge. Mengganti dengan mean: 2.15.
+✅[OK] Nilai null pada kolom congestion_surcharge telah diganti dengan mean: 2.15.
+⚠️[WARNING] Ditemukan nilai null pada kolom airport_fee. Mengganti dengan mean: 0.15.
+✅[OK] Nilai null pada kolom airport_fee telah diganti dengan mean: 0.15.
+⚠️[WARNING] Ditemukan 1 baris dengan trip_duration negatif.
+         trip_duration
+1465434         -702.0
+✅[OK] Tidak ditemukan nilai trip_distance negatif.
+✅[OK] Data yang sudah dibersihkan berhasil disimpan ke: /app/data/mart/yellow_tripdata_2026-01_cleaned.csv
