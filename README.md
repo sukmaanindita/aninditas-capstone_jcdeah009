@@ -6,7 +6,7 @@ Pipeline membaca data mentah dalam format Parquet, melakukan transformasi kolom,
 
 Pipeline juga sudah mencakup proses automasi menggunakan shell script untuk menjalankan seluruh pipeline dengan satu command, kemudian menyimpan log proses automasinya ke dalam folder `logs/`. Selain itu, project ini juga mendukung containerization menggunakan `DockerFile` dan `docker-compose.yaml`, sehingga pipeline dapat dijalankan di dalam container Docker dengan environment yang lebih konsisten.
 
-## Tujuan Project
+## Tujuan Projects
 
 - Membuat pipeline ETL menggunakan Python dan Pandas.
 - Mengubah data mentah Yellow Taxi menjadi data yang lebih siap dianalisis.
@@ -205,16 +205,6 @@ pandas
 ```
 
 Dependency didefinisikan di `requirements.txt`.
-
-## Catatan Pengembangan
-
-Beberapa hal yang bisa dikembangkan berikutnya:
-
-- Menambahkan validasi untuk nilai fare, passenger count, dan tip amount.
-- Menyimpan ringkasan hasil quality check ke file log atau report.
-- Menambahkan unit test untuk setiap fungsi transformasi.
-- Menambahkan konfigurasi input dan output path melalui environment variable.
-- Menambahkan dokumentasi sumber dataset resmi.
 
 ## Author
 
