@@ -33,6 +33,6 @@ run_step() {
 }
 
 log "PIPELINE START"
-run_step "extract_transform_load_data" python3 "$SCRIPT_DIR/extract_transform_load_data_v2.py" --run
+run_step "extract_transform_load_data" python3 "$SCRIPT_DIR/extract_transform_load_data.py" --run
 run_step "data_quality_check" python3 "$SCRIPT_DIR/data_quality_check.py"
 log "PIPELINE COMPLETE"
